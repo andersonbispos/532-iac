@@ -1,0 +1,79 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.8",
+  "serial": 2,
+  "lineage": "89729044-350c-8ab6-c721-d95910d28625",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "multicloud-lab",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/247d0777-aa86-429d-93c7-e8534e5b1de9/resourceGroups/multicloud-lab",
+            "location": "southeastasia",
+            "name": "multicloud-lab",
+            "tags": {},
+            "timeouts": {
+              "create": null,
+              "delete": null,
+              "read": null,
+              "update": null
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_virtual_network",
+      "name": "jitsi_vmnet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "address_space": [
+              "10.0.0.0/16"
+            ],
+            "bgp_community": "",
+            "ddos_protection_plan": [],
+            "dns_servers": [],
+            "edge_zone": "",
+            "flow_timeout_in_minutes": 0,
+            "guid": "3992dc97-65d5-405b-a75b-6c22700a4ee0",
+            "id": "/subscriptions/247d0777-aa86-429d-93c7-e8534e5b1de9/resourceGroups/multicloud/providers/Microsoft.Network/virtualNetworks/jitsi-vmnet",
+            "location": "westus3",
+            "name": "jitsi-vmnet",
+            "resource_group_name": "multicloud",
+            "subnet": [
+              {
+                "address_prefix": "10.0.0.0/24",
+                "id": "/subscriptions/247d0777-aa86-429d-93c7-e8534e5b1de9/resourceGroups/multicloud/providers/Microsoft.Network/virtualNetworks/jitsi-vmnet/subnets/default",
+                "name": "default",
+                "security_group": ""
+              }
+            ],
+            "tags": {
+              "jitsi": "multicloud"
+            },
+            "timeouts": {
+              "create": null,
+              "delete": null,
+              "read": null,
+              "update": null
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    }
+  ]
+}
